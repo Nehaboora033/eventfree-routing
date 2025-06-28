@@ -1,9 +1,14 @@
 import React from 'react'
+import Eventsherosection from '../components/Eventsherosection'
+import Chooseyourevent from '../components/Chooseyourevent'
 
-const events = () => {
+const Events = () => {
   return (
-    <div>events</div>
+    <>
+      <Eventsherosection />
+      <Chooseyourevent/>
+    </>
   )
 }
 
-export default events
+export default Events

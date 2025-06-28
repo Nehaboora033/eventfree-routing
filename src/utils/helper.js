@@ -1,11 +1,17 @@
 import { INSTAGRAM, FACEBOOK, TWITTER } from "./icons"
 
-import footergallery1 from '/src/assets/png/footergallery-first.png'
-import footergallery2 from '/src/assets/png/footergallery-second.png'
-import footergallery3 from '/src/assets/png/footergallery-third.png'
-import footergallery4 from '/src/assets/png/footergallery-fourth.png'
-import footergallery5 from '/src/assets/png/footergallery-fifth.png'
-import footergallery6 from '/src/assets/png/footergallery-sixth.png'
+import footergallery1 from '../assets/png/footergallery-first.png'
+import footergallery2 from '../assets/png/footergallery-second.png'
+import footergallery3 from '../assets/png/footergallery-third.png'
+import footergallery4 from '../assets/png/footergallery-fourth.png'
+import footergallery5 from '../assets/png/footergallery-fifth.png'
+import footergallery6 from '../assets/png/footergallery-sixth.png'
+
+import eventcardImg from '../assets/webp/eventcard-img .webp'
+
+import date from '../assets/svg/date.svg'
+import location from '../assets/svg/loacation.svg'
+import population from '../assets/svg/population.svg'
 
 export const SOCIAL_ICONS = [
     {
@@ -43,9 +49,33 @@ export const FOOTER_GALLERY = [
 ]
 
 export const NAV_LINKS = [
-    { name: "home",},
-    { name: "events",},
-    { name: "feed",},
-    { name: "user name",},
+    { name: "home", },
+    { name: "events", },
+    { name: "feed", },
+    { name: "user name", },
 
 ]
+
+export const EVENT_CARD_DATA = Array(9).fill(
+    {
+        image: eventcardImg,
+        title: "Lorem ipsum dolar sit de",
+        details: [
+            {
+                svg: date,
+                text: "10/02/2022",
+            },
+            {
+                svg: location,
+                text: "Mumbai",
+            },
+            {
+                svg: population,
+                text: "1,080",
+            },
+        ]
+    }
+);
+
+
+

@@ -4,3 +4,7 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
+@theme {
+  --shadow-eventcard:0px 8px 35px 0px #0000001A;
+}
