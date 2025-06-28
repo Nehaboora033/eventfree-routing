@@ -12,6 +12,8 @@ import eventcardImg from '../assets/webp/eventcard-img .webp'
 import date from '../assets/svg/date.svg'
 import location from '../assets/svg/loacation.svg'
 import population from '../assets/svg/population.svg'
+import followingcardimg1 from '../assets/png/followingcard-img1.png'
+import followingcardimg2 from '../assets/png/followingcard-img2.png'
 
 export const SOCIAL_ICONS = [
     {
@@ -79,3 +81,8 @@ export const EVENT_CARD_DATA = Array(9).fill(
 
 
 
+export const FOLLOWING_EVENTS_CARD_IMG = [
+    { image: followingcardimg1,},
+    { image: followingcardimg2,}
+]
+export const 

@@ -13,9 +13,9 @@ const Footer = () => {
                     <div className='row -mx-3 pt-[86px] flex justify-between'>
                         <div className='w-1/3 px-3'>
                             <Link to={'/'}>
-                                
+
                             </Link>
-                            <NormalText Text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c "} className={"text-white max-w-[346.80px] mt-9 mb-6"} />
+                            <NormalText NormalText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c "} className={"text-white text-sm max-w-[346.80px] mt-9 mb-6"} />
                             <div className='flex gap-[15.36px] pb-[96px]'>
                                 {SOCIAL_ICONS.map((items, index) => (
                                     <a href={items.link} key={index} className='hover:-translate-y-2.5 transition-all
@@ -64,11 +64,8 @@ const Footer = () => {
                         </div>
 
                     </div>
-                    <div className='p-7'> 
-                        <p className='font-normal text-sm text-white flex justify-center'>
-                            © Credits of companyName belong to companyName.
-                        </p>
-                    </div>
+                    <div className='p-7'>
+                        <NormalText className={'text-white flex justify-center'} NormalText={" © Credits of companyName belong to companyName."} />                    </div>
                 </div>
 
             </div>

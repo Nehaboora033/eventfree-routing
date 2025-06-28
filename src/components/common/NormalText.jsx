@@ -1,9 +1,9 @@
 import React from 'react'
 
-const NormalText = ({Text,className}) => {
+const NormalText = ({ NormalText, className }) => {
   return (
-      <div>
-          <p className={`${className} font-normal text-sm`}>{Text}</p>
+    <div>
+      <p className={`${className} font-normal text-base text-[#666666]`}>{NormalText}</p>
     </div>
   )
 }
