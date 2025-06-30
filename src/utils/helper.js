@@ -27,6 +27,10 @@ import topics from '../assets/svg/topic.svg'
 import speakers from '../assets/svg/speakers.svg'
 import awards from '../assets/svg/awards.svg'
 
+import sharing from '../assets/svg/sharing.svg'
+import info from '../assets/svg/info.svg'
+import help from '../assets/svg/help.svg'
+
 export const SOCIAL_ICONS = [
     {
         icon: INSTAGRAM,
@@ -65,20 +69,20 @@ export const FOOTER_GALLERY = [
 export const NAV_LINKS = [
     {
         name: "home",
-        link:"home",
-     },
+        link: "home",
+    },
     {
         name: "events",
-        link:"events",
-     },
+        link: "events",
+    },
     {
         name: "feed",
-        link:"feed",
-     },
+        link: "feed",
+    },
     {
         name: "user name",
-        link:"username",
-     },
+        link: "username",
+    },
 
 ]
 
@@ -161,7 +165,7 @@ export const EXPLORE = [
     {
         image: explore_card2,
     }
-];
+]
 
 export const BLUESECTION_DATA = [
     {
@@ -183,5 +187,23 @@ export const BLUESECTION_DATA = [
         icon: awards,
         value: "30",
         text: "awards",
-    }
-];
+    },
+]
+
+export const SPECIAL_DATA = [
+    {
+        icon:sharing,
+        title: "Sharing",
+        
+    },
+    {
+        icon:info,
+        title: "Info",
+        
+    },
+    {
+        icon:help,
+        title: "Help",
+       
+    },
+]
