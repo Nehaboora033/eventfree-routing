@@ -19,6 +19,11 @@ import followingcardimg2 from '../assets/png/followingcard-img2.png'
 import profile2 from '../assets/png/profile2.png'
 import profile3 from '../assets/png/profile3.png'
 import profile4 from '../assets/png/profile4.png'
+import profile5 from '../assets/png/profile5.png'
+import profile6 from '../assets/png/profile6.png'
+import profile7 from '../assets/png/profile7.png'
+import profile8 from '../assets/png/profile8.png'
+
 
 import explore_card1 from '../assets/webp/explore-card1.webp'
 import explore_card2 from '../assets/webp/explore-card2.webp'
@@ -222,4 +227,52 @@ export const BLUEBOX = [
         title: "Capacity",
         data: "Search by city",
     }
-];
+]
+
+export const TELL_US_DATA = [
+    {
+        profile: profile2,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+
+    },
+    {
+        profile: profile3,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.',
+
+    },
+    {
+        profile: profile4,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+
+    },
+    {
+        profile: profile5,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+
+    },
+    {
+        profile: profile6,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+
+    },
+    {
+        profile: profile7,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+
+    },
+    {
+        profile: profile8,
+        name: 'Username',
+        comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
+
+    },
+
+
+
+]
