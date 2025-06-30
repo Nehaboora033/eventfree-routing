@@ -15,6 +15,8 @@ import location from '../assets/svg/loacation.svg'
 import population from '../assets/svg/population.svg'
 import followingcardimg1 from '../assets/png/followingcard-img1.png'
 import followingcardimg2 from '../assets/png/followingcard-img2.png'
+import guiter from '../assets/svg/guiter.svg'
+import ticket from '../assets/svg/ticket.svg'
 
 import profile2 from '../assets/png/profile2.png'
 import profile3 from '../assets/png/profile3.png'
@@ -234,37 +236,31 @@ export const TELL_US_DATA = [
         profile: profile2,
         name: 'Username',
         comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
-
     },
     {
         profile: profile3,
         name: 'Username',
         comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.',
-
     },
     {
         profile: profile4,
         name: 'Username',
         comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
-
     },
     {
         profile: profile5,
         name: 'Username',
         comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
-
     },
     {
         profile: profile6,
         name: 'Username',
         comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
-
     },
     {
         profile: profile7,
         name: 'Username',
         comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
-
     },
     {
         profile: profile8,
@@ -272,7 +268,28 @@ export const TELL_US_DATA = [
         comment: 'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.',
 
     },
+]
 
-
+export const USERNAME_HERO_DATA = [
+    {
+        icon:date,
+        data:'10/02/2022',
+    },
+    {
+        icon:location,
+        data: 'Mumbai',
+    },
+    {
+        icon:population,
+        data: '1,080',
+    },
+    {
+        icon:guiter,
+        data: '1,080',
+    },
+    {
+        icon:ticket,
+        data: '1,080',
+    },
 
 ]

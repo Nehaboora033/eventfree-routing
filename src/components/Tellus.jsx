@@ -5,7 +5,7 @@ import NormalText from './common/NormalText'
 import { TELL_US_DATA } from '../utils/helper'
 import { DELETE } from '../utils/icons'
 import Input from './common/Input'
-import profile9 from '../assets/png/profile9.svg'
+import profile9 from '../assets/png/profile9.png'
 
 const Tellus = () => {
     return (
