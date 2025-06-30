@@ -4,9 +4,9 @@ const Eventsherosection = () => {
   return (
       <>
           <div style={{backgroundImage:`url(${backgroundImage})`}}>
-              <div className='max-w-[1320px] px-3 mx-auto'>
+              <div className='max-w-[1320px] px-3 mx-auto '>
               
-                  <h1 className='font-semibold text-[64px] text-white pt-[143px] pb-[50px]'>Events</h1>
+                  <h1 className='font-semibold text-[64px] text-white pt-[215px] pb-[50px]'>Events</h1>
               </div>
           </div>
       </>

@@ -15,6 +15,12 @@ import population from '../assets/svg/population.svg'
 import followingcardimg1 from '../assets/png/followingcard-img1.png'
 import followingcardimg2 from '../assets/png/followingcard-img2.png'
 
+import profile2 from '../assets/png/profile2.png'
+import profile3 from '../assets/png/profile3.png'
+import profile4 from '../assets/png/profile4.png'
+
+import { LIKE, COMMENT } from "./icons"
+
 export const SOCIAL_ICONS = [
     {
         icon: INSTAGRAM,
@@ -51,10 +57,22 @@ export const FOOTER_GALLERY = [
 ]
 
 export const NAV_LINKS = [
-    { name: "home", },
-    { name: "events", },
-    { name: "feed", },
-    { name: "user name", },
+    {
+        name: "home",
+        link:"home",
+     },
+    {
+        name: "events",
+        link:"events",
+     },
+    {
+        name: "feed",
+        link:"feed",
+     },
+    {
+        name: "user name",
+        link:"username",
+     },
 
 ]
 
@@ -82,7 +100,50 @@ export const EVENT_CARD_DATA = Array(9).fill(
 
 
 export const FOLLOWING_EVENTS_CARD_IMG = [
-    { image: followingcardimg1,},
-    { image: followingcardimg2,}
+    { image: followingcardimg1, },
+    { image: followingcardimg2, }
 ]
-export const 
+
+export const USERNAME_CARD5 = Array(5).fill(
+    {
+        name: "Username",
+        postname: "Post event name",
+        title: "Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.",
+        description1: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+        description2: "Sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+
+    },
+
+)
+export const USERNAME_CARD = [
+    {
+        name: "Username",
+        postname: "Post event name",
+        title: "Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.",
+        description1: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+        description2: "Sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+
+    },
+
+]
+export const POST_DATA = [
+    {
+        profile: profile2,
+        name: "Username",
+        comment: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+        delete: "Remove Comment",
+
+    },
+    {
+        profile: profile3,
+        name: "Username",
+        comment: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla.",
+        delete: "Remove Comment",
+    },
+    {
+        profile: profile4,
+        name: "Username",
+        comment: "Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+        delete: "Remove Comment",
+    },
+]

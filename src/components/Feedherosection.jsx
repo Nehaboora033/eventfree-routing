@@ -10,7 +10,7 @@ import More from './common/more'
 const Feedherosection = () => {
     return (
         <>
-            <div className='max-w-[1320px] px-3 mx-auto'>
+            <div className='max-w-[1320px] px-3 mx-auto pt-[184px]'>
                 <div className='flex flex-wrap -mx-3 mt-[67px] gap-[42px] '>
                     <div className='w-[25%] px-3  '>
                         <img src={jhoneDoe} alt="image" className='w-full' />
@@ -21,21 +21,21 @@ const Feedherosection = () => {
                         <NormalText className={'font-semibold mb-[17px]'} NormalText={'Following Events :'} />
                         <div className='gap-[20px] flex'>
                             {FOLLOWING_EVENTS_CARD_IMG.map((item, index) => (
-                                <>
-                                    <div key={index} className='hover:scale-105 overflow-hidden rounded-[20px] flex gap-3 p-[13px] items-center shadow-card max-w-[322px]'>
-                                        <img src={item.image} alt="image" />
-                                        <div>
-                                            <p className='font-bold text-base'>Augue etiam</p>
-                                            <p className='font-normal text-sm text-[#666666]'>Quis et id urna sagittis. Enim lacus, felis, libero sed nisl vitae blandit sociis.</p>
-                                        </div>
+                                <div key={index} className='hover:scale-105 overflow-hidden rounded-[20px] flex gap-3 p-[13px] items-center shadow-card max-w-[322px]'>
+                                    <img src={item.image} alt="image" />
+                                    <div>
+                                        <p className='font-bold text-base'>Augue etiam</p>
+                                        <p className='font-normal text-sm text-[#666666]'>Quis et id urna sagittis. Enim lacus, felis, libero sed nisl vitae blandit sociis.</p>
                                     </div>
-                                </>
+                                </div>
                             ))}
                             <More className='w-[171px] h-[138px] bg-[#EAEDFF] py-[30px] px-[55px]' />
                         </div>
                     </div>
                 </div>
             </div>
+
+
 
         </>
     )
