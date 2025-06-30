@@ -1,4 +1,5 @@
 import { INSTAGRAM, FACEBOOK, TWITTER } from "./icons"
+import { BLUE_DATE, BLUE_CAPACITY, BLUE_LOCATION } from "./icons"
 
 import footergallery1 from '../assets/png/footergallery-first.png'
 import footergallery2 from '../assets/png/footergallery-second.png'
@@ -192,18 +193,33 @@ export const BLUESECTION_DATA = [
 
 export const SPECIAL_DATA = [
     {
-        icon:sharing,
+        icon: sharing,
         title: "Sharing",
-        
     },
     {
-        icon:info,
+        icon: info,
         title: "Info",
-        
     },
     {
-        icon:help,
+        icon: help,
         title: "Help",
-       
     },
 ]
+
+export const BLUEBOX = [
+    {
+        icon: BLUE_LOCATION,
+        title: "Location",
+        data: "Search by city",
+    },
+    {
+        icon: BLUE_DATE,
+        title: "Date",
+        data: "09/23/2021",
+    },
+    {
+        icon: BLUE_CAPACITY,
+        title: "Capacity",
+        data: "Search by city",
+    }
+];
