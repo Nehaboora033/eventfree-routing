@@ -1,8 +1,10 @@
 import React from 'react'
+import Videosection from '../components/Videosection'
 
 const Username = () => {
   return (
-    <div>Username</div>
+
+    <Videosection />
   )
 }
 

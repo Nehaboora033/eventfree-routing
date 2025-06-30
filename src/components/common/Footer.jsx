@@ -3,7 +3,7 @@ import React from 'react'
 import { FOOTER_GALLERY, FOOTER_LINKS, SOCIAL_ICONS } from '../../utils/helper'
 import NormalText from './NormalText'
 import { Link } from 'react-router-dom'
-
+import logo from '../../assets/svg/footer-logo.svg'
 
 const Footer = () => {
     return (
@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className='row -mx-3 pt-[86px] flex justify-between'>
                         <div className='w-1/3 px-3'>
                             <Link to={'/'}>
-
+                                <img src={logo} alt="logo" />
                             </Link>
                             <NormalText NormalText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c "} className={"text-white text-sm max-w-[346.80px] mt-9 mb-6"} />
                             <div className='flex gap-[15.36px] pb-[96px]'>
