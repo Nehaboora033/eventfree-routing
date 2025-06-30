@@ -11,6 +11,9 @@ import img2 from '../assets/webp/username-img2.webp'
 import img3 from '../assets/webp/username-img3.webp'
 import img4 from '../assets/webp/username-img4.webp'
 import More from './common/more'
+import Input from './common/Input'
+import profile2 from '../assets/png/profile2.png'
+
 
 
 const NewPost = () => {
@@ -62,7 +65,12 @@ const NewPost = () => {
                             </div>
                         </div>
                     ))}
+                    {/* line */}
                     <div className='h-[1px] bg-[#CCCCCC] mt-[33px] mb-[26px]'></div>
+                    {/* input */}
+
+                    <Input placeholderText={"Write your comment here..."} profile={profile2} className='mb-[10px]'/>
+
                     {POST_DATA.map((item, index) => (
                         <div key={index} className='flex gap-5 mt-[24px] '>
                             <img src={item.profile} alt="profile" className='w-[56px] h-[56px]' />

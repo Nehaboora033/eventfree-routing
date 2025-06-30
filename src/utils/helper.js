@@ -19,7 +19,13 @@ import profile2 from '../assets/png/profile2.png'
 import profile3 from '../assets/png/profile3.png'
 import profile4 from '../assets/png/profile4.png'
 
-import { LIKE, COMMENT } from "./icons"
+import explore_card1 from '../assets/webp/explore-card1.webp'
+import explore_card2 from '../assets/webp/explore-card2.webp'
+
+import participants from '../assets/svg/participants.svg'
+import topics from '../assets/svg/topic.svg'
+import speakers from '../assets/svg/speakers.svg'
+import awards from '../assets/svg/awards.svg'
 
 export const SOCIAL_ICONS = [
     {
@@ -147,3 +153,35 @@ export const POST_DATA = [
         delete: "Remove Comment",
     },
 ]
+
+export const EXPLORE = [
+    {
+        image: explore_card1,
+    },
+    {
+        image: explore_card2,
+    }
+];
+
+export const BLUESECTION_DATA = [
+    {
+        icon: participants,
+        value: "8800",
+        text: "participants",
+    },
+    {
+        icon: topics,
+        value: "300",
+        text: "topics",
+    },
+    {
+        icon: speakers,
+        value: "50",
+        text: "speakers",
+    },
+    {
+        icon: awards,
+        value: "30",
+        text: "awards",
+    }
+];

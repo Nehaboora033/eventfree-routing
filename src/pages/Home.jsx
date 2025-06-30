@@ -1,8 +1,15 @@
 import React from 'react'
+import Joinus from '../components/Joinus'
+import Exploreevents from '../components/Exploreevents'
+import Bluesection from '../components/Bluesection'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Bluesection />
+      <Exploreevents />
+      <Joinus />
+    </>
   )
 }
 

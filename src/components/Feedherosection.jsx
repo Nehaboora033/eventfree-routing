@@ -10,12 +10,12 @@ import More from './common/more'
 const Feedherosection = () => {
     return (
         <>
-            <div className='max-w-[1320px] px-3 mx-auto pt-[184px]'>
-                <div className='flex flex-wrap -mx-3 mt-[67px] gap-[42px] '>
-                    <div className='w-[25%] px-3  '>
+            <div className='max-w-[1320px] px-3 mx-auto mt-[167px]'>
+                <div className='flex flex-wrap -mx-3 justify-between '>
+                    <div className='w-[31%] px-3  '>
                         <img src={jhoneDoe} alt="image" className='w-full' />
                     </div>
-                    <div className='w-[70%] px-3'>
+                    <div className='w-[67%] px-3'>
                         <Heading headingText={"Jhone Doe"} className='font-semibold' />
                         <NormalText className={'max-w-[857px] mt-4 mb-[29px]'} NormalText={"Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet."} />
                         <NormalText className={'font-semibold mb-[17px]'} NormalText={'Following Events :'} />

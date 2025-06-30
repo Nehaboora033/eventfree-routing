@@ -13,7 +13,7 @@ import More from './common/more'
 const Userdata = () => {
   return (
     <>
-      <div className='max-w-[1320px] px-3 mx-auto'>
+      <div className='max-w-[1320px] px-3 mx-auto mb-[104px]'>
         {USERNAME_CARD5.map((item, index) => (
           <div key={index} className='outline outline-[#CCCCCC] py-[30px] px-[34px] rounded-[30px] mt-[45px] '>
             <div className='flex  flex-wrap -mx-3'>
