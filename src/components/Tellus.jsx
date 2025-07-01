@@ -1,5 +1,5 @@
 import React from 'react'
-import line from '../assets/png/small-blueline.png'
+import line from '../assets/png/username-blueline.png'
 import Heading from './common/Heading'
 import NormalText from './common/NormalText'
 import { TELL_US_DATA } from '../utils/helper'
@@ -18,12 +18,12 @@ const Tellus = () => {
             {TELL_US_DATA.map((item, index) => (
                 <div key={index} className='flex gap-5 mt-[24px] '>
                     <img src={item.profile} alt="profile" className='w-[56px] h-[56px]' />
-                    <div>
+                    <div className='w-full'>
                         <div className='bg-[#F1F2F5]  py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px]'>
                             <h3 className='text-base font-medium'>{item.name} </h3>
                             <p className='font-normal text-base text-[#606162]'>{item.comment} </p>
                         </div>
-                        <div className='flex gap-[5px] items-center mt-2'>
+                        <div className='flex gap-[5px] items-center mt-2 pl-5'>
                             <DELETE />
                             <p className='font-normal text-base text-[#8C8C8C]'>Remove Comment</p>
                         </div>

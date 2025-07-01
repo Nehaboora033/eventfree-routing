@@ -21,7 +21,7 @@ const Joinus = () => {
 
                     <NormalText NormalText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue "}/>
 
-                    <Heading headingText={'Sign Up'} className='mb-[14px]'/>
+                    <Heading headingText={'Sign Up'} className='mb-[14px] !text-[35px]'/>
 
                     <div>
                         <div className='flex justify-between mb-4 '>
@@ -53,7 +53,7 @@ const Joinus = () => {
                         <textarea className='w-full py-[10px] px-4 min-h-[124px] resize-none border border-[#999999] rounded-[5px] placeholder:font-poppins placeholder:font-normal placeholder:text-base placeholder:text-[#4D4D4D] mb-[37px] ' placeholder='About Me ' />
                     </div>
 
-                    <Button buttonText={"Sign up"}/>
+                    <Button buttonText={"Sign up"} className='w-full hover:scale-[1.025] transition-all duration-300 '/>
                 </div>
             </div>
         </div>

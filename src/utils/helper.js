@@ -39,6 +39,13 @@ import sharing from '../assets/svg/sharing.svg'
 import info from '../assets/svg/info.svg'
 import help from '../assets/svg/help.svg'
 
+import galleryimg1 from '../assets/webp/galleryimg1.webp'
+import galleryimg2 from '../assets/webp/galleryimg2.webp'
+import galleryimg3 from '../assets/webp/galleryimg3.webp'
+import galleryimg4 from '../assets/webp/galleryimg4.webp'
+import galleryimg5 from '../assets/webp/galleryimg5.webp'
+import galleryimg6 from '../assets/webp/galleryimg6.webp'
+
 export const SOCIAL_ICONS = [
     {
         icon: INSTAGRAM,
@@ -272,24 +279,58 @@ export const TELL_US_DATA = [
 
 export const USERNAME_HERO_DATA = [
     {
-        icon:date,
-        data:'10/02/2022',
+        icon: date,
+        data: '10/02/2022',
     },
     {
-        icon:location,
+        icon: location,
         data: 'Mumbai',
     },
     {
-        icon:population,
+        icon: population,
         data: '1,080',
     },
     {
-        icon:guiter,
+        icon: guiter,
         data: '1,080',
     },
     {
-        icon:ticket,
+        icon: ticket,
         data: '1,080',
+    },
+
+]
+
+export const GALLERY_IMG = [
+    {
+        image: galleryimg1,
+        colSpan: 'col-span-1',
+        rowSpan: 'row-span-1',
+    },
+    {
+        image: galleryimg2,
+        colSpan: 'col-span-1',
+        rowSpan: 'row-span-1',
+    },
+    {
+        image: galleryimg3,
+        colSpan: 'col-span-1',
+        rowSpan: 'row-span-2',
+    },
+    {
+        image: galleryimg4,
+        colSpan: 'col-span-2',
+        rowSpan: 'row-span-1',
+    },
+    {
+        image: galleryimg5,
+        colSpan: 'col-span-1',
+        rowSpan: 'row-span-1',
+    },
+    {
+        image: galleryimg6,
+        colSpan: 'col-span-2',
+        rowSpan: 'row-span-1',
     },
 
 ]

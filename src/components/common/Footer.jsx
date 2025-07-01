@@ -18,8 +18,8 @@ const Footer = () => {
                             <NormalText NormalText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c "} className={"text-white text-sm max-w-[346.80px] mt-9 mb-6"} />
                             <div className='flex gap-[15.36px] pb-[96px]'>
                                 {SOCIAL_ICONS.map((items, index) => (
-                                    <a href={items.link} key={index} className='hover:-translate-y-2.5 transition-all
-                                    ease-in-out '>
+                                    <a href={items.link} key={index} className='hover:-translate-y-2 transition-all
+                                    duration-200 '>
                                         <items.icon />
                                     </a>
                                 ))}
@@ -33,8 +33,11 @@ const Footer = () => {
                                     </li>
                                     {item.list.map((link, i) => (
                                         <li key={i}>
-                                            <Link to={'/${link}'} className='text-white font-normal text-[12px] mb-3'>
+                                            <Link
+                                                to={`/${link}`}
+                                                className="text-white font-normal text-[12px] mb-3 relative inline-block group">
                                                 {link}
+                                                <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
                                             </Link>
                                         </li>
                                     ))}
@@ -47,8 +50,8 @@ const Footer = () => {
                                     </li>
                                     <div className='grid grid-cols-3 gap-x-[18px] gap-y-[13px]'>
                                         {item.image.map((img, i) => (
-                                            <div key={i} className='relative hover:scale-105  transition-all '>
-                                                <img src={img} alt="image" draggable="false" className='w-full' />
+                                            <div key={i} className='relative overflow-hidden transition-all '>
+                                                <img src={img} alt="image" draggable="false" className='w-full hover:scale-110' />
                                                 {i === item.image.length - 1 && (
                                                     <div className='absolute inset-0 flex items-center justify-center '>
                                                         <p className='text-white'>Show<br /> More</p>

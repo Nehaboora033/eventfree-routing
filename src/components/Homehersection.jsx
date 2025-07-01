@@ -47,7 +47,7 @@ const Homehersection = () => {
                       </React.Fragment>
                   ))}
 
-                  <Button className='py-5 px-10 bg-white !text-[#2C49FE] uppercase !font-bold text-[20px] ' buttonText={'go check'} />
+                  <Button className='!py-5 !px-10 bg-white !text-[#2C49FE] uppercase !font-bold text-[20px] ' buttonText={'go check'} />
               </div>
           </div>
       </div>

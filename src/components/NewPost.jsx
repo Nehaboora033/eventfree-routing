@@ -66,7 +66,7 @@ const NewPost = () => {
                         </div>
                     ))}
                     {/* line */}
-                    <div className='h-[1px] bg-[#CCCCCC] mt-[33px] mb-[26px]'></div>
+                    <div className='border-[1px] border-[#CCCCCC] mt-[33px] mb-[26px]'></div>
                     {/* input */}
 
                     <Input placeholderText={"Write your comment here..."} profile={profile2} className='mb-[10px]'/>
@@ -74,12 +74,12 @@ const NewPost = () => {
                     {POST_DATA.map((item, index) => (
                         <div key={index} className='flex gap-5 mt-[24px] '>
                             <img src={item.profile} alt="profile" className='w-[56px] h-[56px]' />
-                            <div className=''>
+                            <div className='w-full'>
                                 <div className='bg-[#F1F2F5]  py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px]'>
                                     <h3 className='text-base font-medium'>{item.name} </h3>
                                     <p className='font-normal text-base text-[#606162]'>{item.comment} </p>
                                 </div>
-                                <div className='flex gap-[5px] items-center mt-2'>
+                                <div className='flex gap-[5px] items-center mt-2 pl-5'>
                                     <DELETE />
                                     <p className='font-normal text-base text-[#8C8C8C]'>{item.delete} </p>
                                 </div>

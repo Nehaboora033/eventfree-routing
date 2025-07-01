@@ -15,8 +15,8 @@ const Chooseyourevent = () => {
 
         <div className='grid grid-cols-3 gap-[25px]'>
           {EVENT_CARD_DATA.map((item, index) => (
-            <div key={index} className='outline outline-[#CCCCCC] rounded-[30px] pt-[35px] pb-[30px] transition-all duration-150 ease-in-out group px-[40px] hover:outline-0 hover:shadow-card'>
-              <img src={item.image} alt="image" className='group-hover:rounded-none rounded-[20px] w-full' />
+            <div key={index} className='outline outline-[#CCCCCC] rounded-[30px] pt-[35px] pb-[30px] transition-all duration-200 ease-in-out group px-[40px] hover:outline-0 hover:shadow-card'>
+              <img src={item.image} alt="image" className='group-hover:rounded-none rounded-[20px] w-full transition-all duration-200 ' />
               <h3 className='font-semibold text-2xl mt-[21px] mb-3'>{item.title} </h3>
               {item.details.map((info, i) => (
                 <div key={i} className='flex items-center gap-2 mb-[17px]'>

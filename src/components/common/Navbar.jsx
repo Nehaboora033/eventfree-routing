@@ -26,8 +26,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 z-20 w-full transition duration-150 ease-in-out  ${scrolled ? 'shadow-card bg-white' : ''} ${FeedPage||UsernamePage?'bg-white shadow-card':''} `}>
-        <div className={`max-w-[1320px] mx-auto px-3 flex items-center justify-between  ${HomePage||EventsPage?'bg-transparent':''}${FeedPage||UsernamePage?'bg-white':''}`}>
+      <nav className={`fixed top-0 py-3 z-20 w-full transition duration-300 ease-in-out  ${scrolled ? 'shadow-card bg-white' : ''} ${FeedPage || UsernamePage ? 'bg-white shadow-card' : ''} `}>
+        <div className={`max-w-[1320px] mx-auto px-3 flex items-center justify-between  ${HomePage || EventsPage ? 'bg-transparent' : ''}${FeedPage || UsernamePage ? 'bg-white' : ''}`}>
           <Link to="/" className='flex gap-[15px] items-center'>
             <img src={logoIcon} alt="logo-icon" />
             <p className='font-bold text-[36px] text-[#2C49FE]'>Events<span className='text-[#01C8FF]'>Free</span></p>
@@ -35,8 +35,14 @@ const Navbar = () => {
           <div className='flex items-center gap-14'>
             <div className='flex gap-16 '>
               {NAV_LINKS.map((item, index) => (
-                <NavLink to={item.link == "home" ? '/' : `/${item.link}`} key={index} className={({ isActive }) => `font-normal text-base uppercase ${isActive ? 'opacity-100' : 'opacity-70'} ${(HomePage||EventsPage)?(scrolled?'text-black':'text-white'):(scrolled?'text-black':'text-black')}`}>
+                <NavLink
+                  to={item.link === "home" ? '/' : `/${item.link}`}
+                  key={index}
+                  className={({ isActive }) => `relative inline-block px-3 py-1 uppercase font-normal text-base transition-all duration-300 ease-in-out overflow-hidden rounded-[5px] group ${isActive ? 'opacity-100 border-b-2 border-[#01C8FF]' : 'opacity-70'} group-hover:text-white
+                   ${(HomePage || EventsPage) ? (scrolled ? 'text-black' : 'text-white') : (scrolled ? 'text-black' : 'text-black')}`} >
                   {item.name}
+                  <span className="absolute inset-0 h-full w-full bg-[#01C8FF] z-[-1] rounded-[5px]
+                     scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-in-out"></span>
                 </NavLink>
               ))}
             </div>

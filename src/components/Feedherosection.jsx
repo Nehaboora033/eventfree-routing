@@ -21,7 +21,7 @@ const Feedherosection = () => {
                         <NormalText className={'font-semibold mb-[17px]'} NormalText={'Following Events :'} />
                         <div className='gap-[20px] flex'>
                             {FOLLOWING_EVENTS_CARD_IMG.map((item, index) => (
-                                <div key={index} className='hover:scale-105 overflow-hidden rounded-[20px] flex gap-3 p-[13px] items-center shadow-card max-w-[322px]'>
+                                <div key={index} className='hover:scale-105 transition-all duration-200 overflow-hidden rounded-[20px] flex gap-3 p-[13px] items-center shadow-card max-w-[322px]'>
                                     <img src={item.image} alt="image" />
                                     <div>
                                         <p className='font-bold text-base'>Augue etiam</p>
