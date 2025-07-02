@@ -66,10 +66,10 @@ const NewPost = () => {
                         </div>
                     ))}
                     {/* line */}
-                    <div className='border-[1px] border-[#CCCCCC] mt-[33px] mb-[26px]'></div>
+                    <div className='h-[1px] bg-[#CCCCCC] mt-[33px] mb-[26px]'></div>
                     {/* input */}
 
-                    <Input placeholderText={"Write your comment here..."} profile={profile2} className='mb-[10px]'/>
+                    <Input placeholderText={"Write your comment here..."} profile={profile2} className='mb-[10px]' />
 
                     {POST_DATA.map((item, index) => (
                         <div key={index} className='flex gap-5 mt-[24px] '>

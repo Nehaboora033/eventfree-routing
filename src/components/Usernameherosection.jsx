@@ -4,6 +4,7 @@ import Heading from './common/Heading'
 import NormalText from './common/NormalText'
 import { USERNAME_HERO_DATA } from '../utils/helper'
 import Button from './common/Button'
+import Breadcrumbs from './common/Breadcrumbs'
 
 const Usernameherosection = () => {
     return (
@@ -13,6 +14,7 @@ const Usernameherosection = () => {
                     <img src={image} alt="image" />
                 </div>
                 <div className='w-[67%] px-3'>
+                    <Breadcrumbs/>
                     <div className='flex justify-between'>
                         <Heading className='font-semibold whitespace-nowrap' headingText={'Jhone Doe'} />
                         <div className='flex gap-3 items-center'>

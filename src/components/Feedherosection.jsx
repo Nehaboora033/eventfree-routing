@@ -4,6 +4,7 @@ import Heading from './common/Heading'
 import NormalText from './common/NormalText'
 import { FOLLOWING_EVENTS_CARD_IMG } from '../utils/helper'
 import More from './common/more'
+import Breadcrumbs from './common/Breadcrumbs'
 
 
 
@@ -16,6 +17,7 @@ const Feedherosection = () => {
                         <img src={jhoneDoe} alt="image" className='w-full' />
                     </div>
                     <div className='w-[67%] px-3'>
+                        <Breadcrumbs />
                         <Heading headingText={"Jhone Doe"} className='font-semibold' />
                         <NormalText className={'max-w-[857px] mt-4 mb-[29px]'} NormalText={"Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet."} />
                         <NormalText className={'font-semibold mb-[17px]'} NormalText={'Following Events :'} />
