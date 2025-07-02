@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { POST_DATA, USERNAME_CARD } from '../utils/helper'
 import Heading from './common/Heading'
 import line from '../assets/png/small-blueline.png'
@@ -17,6 +17,18 @@ import profile2 from '../assets/png/profile2.png'
 
 
 const NewPost = () => {
+    const [liked, setLiked] = useState(false);
+    const [likeCount, setLikeCount] = useState(10);
+
+    const handleLikeClick = () => {
+        if (liked) {
+            setLiked(false);
+            setLikeCount(prev => prev - 1);
+        } else {
+            setLiked(true);
+            setLikeCount(prev => prev + 1);
+        }
+    };
     return (
         <>
             <div className='max-w-[1320px] px-3 mx-auto'>
@@ -42,9 +54,9 @@ const NewPost = () => {
                                 <h3 className='font-normal text-base text-[#666666] mt-[13px] max-w-[553px]'>{item.description2} </h3>
 
                                 <div className='flex gap-[40px] mt-[26px]'>
-                                    <div className='flex gap-2 items-center'>
-                                        <LIKE />
-                                        <p className='font-normal text-base text-[#666666]'>10</p>
+                                    <div className='flex gap-2 items-center' onClick={handleLikeClick}>
+                                        <LIKE liked={liked} />
+                                        <p className='font-normal text-base text-[#666666]'>{likeCount}</p>
                                     </div>
                                     <div className='flex  gap-2 items-center'>
                                         <COMMENT />

@@ -19,7 +19,7 @@ const Usernameherosection = () => {
                         <Heading className='font-semibold whitespace-nowrap' headingText={'Jhone Doe'} />
                         <div className='flex gap-3 items-center'>
                             <Button className='bg-[#EAEDFF] !text-black' buttonText={'Unshow Journey of Feed'} />
-                            <Button className='bg-[#EAEDFF] !text-black' buttonText={'Show Journey of Feed'} />
+                            <Button className='' buttonText={'Show Journey of Feed'} />
                         </div>
                     </div>
 
