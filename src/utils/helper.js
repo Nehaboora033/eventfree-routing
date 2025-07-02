@@ -129,17 +129,17 @@ export const FOLLOWING_EVENTS_CARD_IMG = [
     { image: followingcardimg2, }
 ]
 
-export const USERNAME_CARD5 = Array(5).fill(
-    {
-        name: "Username",
-        postname: "Post event name",
-        title: "Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.",
-        description1: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
-        description2: "Sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+// export const USERNAME_CARD5 = Array(5).fill(
+//     {
+//         name: "Username",
+//         postname: "Post event name",
+//         title: "Fusce adipiscing nunc et tellus eu, tristique sodales sit aliquet.",
+//         description1: "Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
+//         description2: "Sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.",
 
-    },
+//     },
 
-)
+// )
 export const USERNAME_CARD = [
     {
         name: "Username",

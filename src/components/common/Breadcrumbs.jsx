@@ -36,7 +36,7 @@ const Breadcrumbs = () => {
                                 {name}
                             </Link>
                         ) : (
-                                <span className={`text-black ${EventsPage?'text-white':'text-black'}`}>{name}</span>
+                                <span className={`text-black capitalize ${EventsPage?'text-white':'text-black'}`}>{name}</span>
                         )}
                     </span>
                 );
