@@ -10,22 +10,23 @@ const Footer = () => {
         <>
             <div className='bg-black'>
                 <div className='max-w-[1320px] px-3 mx-auto'>
-                    <div className='row -mx-3 pt-[86px] flex justify-between'>
-                        <div className='w-1/3 px-3'>
+                    <div className='row -mx-3 pt-[86px] flex-wrap flex justify-between gap-[30px]'>
+                        <div className='lg:w-[33.33%] w-full px-3'>
                             <Link to={'/'}>
                                 <img src={logo} alt="logo" />
                             </Link>
                             <NormalText NormalText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c "} className={"text-white text-sm max-w-[346.80px] mt-9 mb-6"} />
-                            <div className='flex gap-[15.36px] pb-[96px]'>
+                            <div className='flex gap-[15.36px] '>
                                 {SOCIAL_ICONS.map((items, index) => (
-                                    <a href={items.link} key={index} className='hover:-translate-y-2 transition-all
-                                    duration-200 '>
+
+                                    <Link to={items.link} key={index} className='hover:-translate-y-2 transition-all
+                                        duration-200 '>
                                         <items.icon />
-                                    </a>
+                                    </Link>
                                 ))}
                             </div>
                         </div>
-                        <div className='w-1/2 px-3 flex gap-[80px]'>
+                        <div className='lg:w-[50%] w-full px-3 flex justify-between max-sm:grid max-sm:grid-cols-2 max-sm:gap-[24px] '>
                             {FOOTER_LINKS.map((item, index) => (
                                 <ul key={index}>
                                     <li className='text-white font-bold text-sm mb-[11px]'>
@@ -44,14 +45,14 @@ const Footer = () => {
                                 </ul>
                             ))}
                             {FOOTER_GALLERY.map((item, index) => (
-                                <ul key={index} >
+                                <ul key={index} className='col-span-2 ' >
                                     <li className='text-white font-bold text-sm mb-[11px]'>
                                         {item.title}
                                     </li>
                                     <div className='grid grid-cols-3 gap-x-[18px] gap-y-[13px]'>
                                         {item.image.map((img, i) => (
                                             <div key={i} className='relative overflow-hidden transition-all '>
-                                                <img src={img} alt="image" draggable="false" className='w-full hover:scale-110' />
+                                                <img src={img} alt="image" draggable="false" className='w-full hover:scale-97' />
                                                 {i === item.image.length - 1 && (
                                                     <div className='absolute inset-0 flex items-center justify-center '>
                                                         <p className='text-white'>Show<br /> More</p>
@@ -61,16 +62,12 @@ const Footer = () => {
                                         ))}
                                     </div>
                                 </ul>
-
                             ))}
-
                         </div>
-
                     </div>
-                    <div className='p-7'>
+                    <div className='p-7 mt-[96px]'>
                         <NormalText className={'text-white flex justify-center'} NormalText={" © Credits of companyName belong to companyName."} />                    </div>
                 </div>
-
             </div>
         </>
     )

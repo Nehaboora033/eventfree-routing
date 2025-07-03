@@ -18,7 +18,7 @@ const Tellus = () => {
     const handlePostComment = (text) => {
         const newComment = {
             profile: profile9,
-            name: 'username',
+            name: 'Username',
             comment: text,
 
         };

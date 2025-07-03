@@ -13,7 +13,7 @@ import More from './../common/more'
 import Input from './../common/Input'
 import profile2 from '../../assets/png/profile2.png'
 
-const AddComment = ({className}) => {
+const AddComment = ({ className = '', defaultOpen = false }) => {
     const [liked, setLiked] = useState(false);
     const [likeCount, setLikeCount] = useState(10);
     const [commentList, setComentList] = useState(POST_DATA);
@@ -29,23 +29,25 @@ const AddComment = ({className}) => {
     };
 
     const handlePostComment = (text) => {
-            const newComment = {
-                profile: profile2,
-                name: 'username',
-                comment: text,
-    
-            };
-            setComentList([newComment, ...commentList]); //added  to top
-        }
+        const newComment = {
+            profile: profile2,
+            name: 'Username',
+            comment: text,
+
+        };
+        setComentList([newComment, ...commentList]); //added  to top
+    }
 
     const handleDelete = (indexToRemove) => {
         const updated = commentList.filter((_, index) => index !== indexToRemove);
         setComentList(updated);
     };
+    const [showComents, setShowComents] = useState(defaultOpen);
+    const currentDate = new Date().toLocaleDateString('en-GB')
 
-    const [showComents, setShowComents] = useState(false);
+
     return (
-        <div className={`p-[34px] rounded-[30px] mb-[45px] transition-shadow duration-300 ease-linear ${className} ${showComents?'shadow-card outline-0 ':''}`}>
+        <div className={`p-[34px] rounded-[30px] mb-[45px] transition-shadow duration-300 ease-linear ${className} ${showComents ? 'shadow-card outline-0 ' : ''}`}>
             {USERNAME_CARD.map((item, index) => (
                 <div key={index} className='flex  flex-wrap -mx-3'>
                     <div className='w-1/2 px-3'>
@@ -59,7 +61,7 @@ const AddComment = ({className}) => {
                         <h3 className='font-semibold text-2xl mt-[45px]'>{item.title} </h3>
                         <div className='flex gap-2 mt-2'>
                             <img src={date} alt="date" />
-                            <p className='font-normal text-base text-[#666666]'>10/02/2022</p>
+                            <p className='font-normal text-base text-[#666666]'>{currentDate} </p>
                         </div>
                         <h3 className='font-normal text-base text-[#666666] max-w-[553px] mt-5'>{item.description1} </h3>
                         <h3 className='font-normal text-base text-[#666666] mt-[13px] max-w-[553px]'>{item.description2} </h3>

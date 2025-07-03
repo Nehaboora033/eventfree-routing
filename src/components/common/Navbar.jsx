@@ -3,6 +3,7 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import logoIcon from '../../assets/svg/logo-icon.svg'
 import { NAV_LINKS } from '../../utils/helper'
 import Button from './Button'
+import { Divide as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
 
@@ -47,6 +48,9 @@ const Navbar = () => {
               ))}
             </div>
             <Button buttonText={"Log Out"} className='text-white' />
+            <div className='z-[19]'>
+              <Hamburger />
+            </div>
           </div>
         </div>
       </nav>

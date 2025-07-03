@@ -12,7 +12,7 @@ const Gallery = () => {
             <div className='grid grid-cols-3 gap-[24px]'>
                 {GALLERY_IMG.map((img, index) => (
                     <div key={index} className={`overflow-hidden rounded-[30px] ${img.colSpan} ${img.rowSpan}`}>
-                        <img src={ img.image} alt="image" className='w-full h-full object-cover hover:scale-105 transition duration-200 ease-in-out' />
+                        <img src={ img.image} alt="image" className='w-full h-full object-cover hover:scale-98 transition duration-200 ease-in-out' />
                     </div>
                 ))
                 }
