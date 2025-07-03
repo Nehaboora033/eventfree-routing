@@ -10,9 +10,12 @@ const Homehersection = () => {
   return (
       <div className='bg-center bg-cover bg-no-repeat pb-[104px] ' style={{ backgroundImage: `url(${backgroundImage})` }} >
           <div className='max-w-[1320px] mx-auto pt-[256px] px-3 '>
-              <h1 className='font-poppins font-bold text-[64px] text-white max-w-[1044px] leading-[150%] relative mb-[18px] '>
-                  Sed tortor inquisque morbi scelerisque etiam eu.
-                  <img src={blueline} alt="img" className='absolute top-1/2 right-42' />
+              <h1 className='font-poppins font-bold text-[64px] text-white max-w-[1044px] leading-[150%]  mb-[18px] '>
+                  Sed tortor in <span className='inline-block relative '>quisque morbi
+                      <img src={blueline} alt="img" className='absolute'/>
+                  </span>
+                  scelerisque etiam eu.
+                 
               </h1>
 
               <NormalText
@@ -35,10 +38,10 @@ const Homehersection = () => {
                           <div className='flex gap-[21px] items-center '>
                               <items.icon />
                               <div>
-                                  <p className='font-yantra font-medium text-[20px] text-white '>
+                                  <p className='!font-yantra font-medium text-[20px] text-white '>
                                       {items.title}
                                   </p>
-                                  <p className='font-yantra font-normal text-[14px] text-[#FFFFFFB2] '>
+                                  <p className='!font-yantra font-normal text-[14px] text-[#FFFFFFB2] '>
                                       {items.data}
                                   </p>
                               </div>
