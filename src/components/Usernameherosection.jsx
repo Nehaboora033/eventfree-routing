@@ -9,22 +9,25 @@ import Breadcrumbs from './common/Breadcrumbs'
 const Usernameherosection = () => {
     return (
         <div className='max-w-[1320px] px-3 mx-auto pt-[167px]'>
+            <Breadcrumbs />
             <div className='flex flex-wrap -mx-3 justify-between'>
-                <div className='w-[30%] px-3'>
+                <div className='lg:w-[30%] w-full px-3 max-[1100px]:flex items-center justify-center'>         
                     <img src={image} alt="image" />
                 </div>
-                <div className='w-[67%] px-3'>
-                    <Breadcrumbs/>
-                    <div className='flex justify-between'>
-                        <Heading className='font-semibold whitespace-nowrap' headingText={'Jhone Doe'} />
-                        <div className='flex gap-3 items-center'>
+                <div className='lg:w-[67%] w-full px-3'>
+                    <div className='max-lg:hidden'>
+                        <Breadcrumbs />
+                    </div>
+                    <div className='flex justify-between min-[1150px]:flex-row max-[1024px]:flex-row flex-col  max-md:flex-col min-[1150px]:gap-0 gap-2'>
+                        <Heading className='font-semibold whitespace-nowrap max-[504px]:justify-center flex ' headingText={'Jhone Doe'} />
+                        <div className='flex  gap-3 items-center max-[504px]:flex-col'>
                             <Button className='bg-[#EAEDFF] !text-black' buttonText={'Unshow Journey of Feed'} />
                             <Button className='' buttonText={'Show Journey of Feed'} />
                         </div>
                     </div>
 
                     <NormalText className={'max-w-[857px] mt-5 mb-[38px]'} NormalText={'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.'} />
-                    <div className='flex justify-between max-w-[572px]'>
+                    <div className='grid min-[700px]:grid-cols-5 min-[400px]:grid-cols-3 grid-cols-2 min-[700px]:gap-0 gap-2 '>
                         {USERNAME_HERO_DATA.map((item, index) => (
                             <div key={index} className='' >
                                 <div className='flex gap-2 items-center '>

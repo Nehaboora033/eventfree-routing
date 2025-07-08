@@ -65,8 +65,9 @@ const Footer = () => {
                             ))}
                         </div>
                     </div>
-                    <div className='p-7 mt-[96px]'>
-                        <NormalText className={'text-white flex justify-center'} NormalText={" © Credits of companyName belong to companyName."} />                    </div>
+                    <div className='sm:p-7 p-4 mt-[96px]'>
+                        <NormalText className={'text-white text-center'} NormalText={" © Credits of companyName belong to companyName."} />
+                    </div>
                 </div>
             </div>
         </>

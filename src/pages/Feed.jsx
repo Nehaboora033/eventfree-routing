@@ -6,7 +6,7 @@ const Feed = () => {
   return (
       <>
       
-      <Feedherosection />
+      {/* <Feedherosection /> */}
       <NewPost/>
       </>
   )

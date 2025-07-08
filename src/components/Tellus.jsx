@@ -33,16 +33,16 @@ const Tellus = () => {
             <Input placeholderText={"Add a new comment"} profile={profile9} className='mb-[10px]' onPost={handlePostComment} />
 
             {commentList.map((item, index) => (
-                <div key={index} className='flex gap-5 mt-[24px] '>
-                    <img src={item.profile} alt="profile" className='w-[56px] h-[56px]' />
+                <div key={index} className='flex sm:gap-5 gap-3 mt-[24px] '>
+                    <img src={item.profile} alt="profile" className='sm:w-[56px] sm:h-[56px] w-[45px] h-[45px]' />
                     <div className='w-full'>
                         <div className='bg-[#F1F2F5]  py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px]'>
                             <h3 className='text-base font-medium'>{item.name} </h3>
-                            <p className='font-normal text-base text-[#606162]'>{item.comment} </p>
+                            <p className='font-normal sm:text-base text-[14px] text-[#606162]'>{item.comment} </p>
                         </div>
                         <div className='flex gap-[5px] items-center mt-2 pl-5' onClick={() => handleDelete(index)} >
                             <DELETE />
-                            <p className='font-normal text-base text-[#8C8C8C]'>Remove Comment</p>
+                            <p className='font-normal sm:text-base text-[14px]  text-[#8C8C8C]'>Remove Comment</p>
                         </div>
                     </div>
                 </div>
