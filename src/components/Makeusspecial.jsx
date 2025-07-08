@@ -9,11 +9,11 @@ const Makeusspecial = () => {
     return (
         <div className='max-w-[1320px] mx-auto mt-[137px] mb-[73px] px-3 '>
             <div className="flex flex-wrap -mx-3">
-                <div className="w-1/2 px-3 ">
+                <div className="min-[1100px]:w-1/2 w-full px-3 flex items-center justify-center ">
                     <img src={television} alt="image" draggable='false' />
                 </div>
 
-                <div className="w-1/2 px-3 ">
+                <div className="min-[1100px]:w-1/2 w-full px-3 ">
                     <img src={blueline} alt="image" draggable='false' className='mb-[21px] ' />
 
                     <Heading
@@ -26,10 +26,10 @@ const Makeusspecial = () => {
                         className='mb-[46px] '
                     />
 
-                    <div className='grid grid-cols-2 gap-y-[37px]'>
+                    <div className='grid min-[1220px]:grid-cols-2 max-[430px]:grid-cols-1   gap-y-[37px] max-[1220px]:gap-x-8'>
                         {SPECIAL_DATA.map((items, index) => (
                             <div key={index} className={`relative flex justify-center ${SPECIAL_DATA.length % 2 !== 0 && index === SPECIAL_DATA.length - 1 ? 'col-span-2 mx-auto' : ''}`}>
-                                <div className='size-[79px] max-w-[79px] w-full border-[2px] border-[#2C49FE] bg-white z-1 rounded-full flex items-center justify-center absolute left-1/2 -translate-x-1/2 -translate-y-1/2 '>
+                                <div className='size-[79px] max-w-[79px] w-full border-[2px] border-[#2C49FE] bg-white z-1 rounded-full flex items-center justify-center  absolute left-1/2 -translate-x-1/2 -translate-y-1/2 '>
                                     <img src={items.icon} alt="icon" />
                                 </div>
 

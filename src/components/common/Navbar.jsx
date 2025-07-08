@@ -4,6 +4,7 @@ import logoIcon from '../../assets/svg/logo-icon.svg'
 import { NAV_LINKS } from '../../utils/helper'
 import Button from './Button'
 import { Divide as Hamburger } from 'hamburger-react'
+import Username from '../../pages/Username'
 
 const Navbar = () => {
 
@@ -42,24 +43,29 @@ const Navbar = () => {
                   to={item.link === "home" ? '/' : `/${item.link}`}
                   key={index}
                   className={({ isActive }) => {
-                    const baseClasses = 'relative inline-block px-3 py-1 uppercase whitespace-nowrap font-normal text-base transition-all duration-300 ease-in-out overflow-hidden rounded-[5px] group';
+                    const baseClasses =
+                      'relative inline-block px-3 py-1 uppercase whitespace-nowrap font-normal text-base transition-all duration-300 ease-in-out overflow-hidden rounded-[5px] group';
 
-                    const activeClass = isActive ? 'opacity-100 border-b-2 border-[#01C8FF]' : 'opacity-70';
+                    const activeClass = isActive
+                      ? 'opacity-100 border-b-2 border-[#01C8FF]'
+                      : 'opacity-70';
 
                     const MainPage = HomePage || EventsPage;
+                    const FeedPageMatch = FeedPage || UsernamePage;
 
                     let textColor = '';
 
                     if (MainPage) {
-                      textColor = scrolled ? 'text-black' : 'text-white';
+                      textColor = scrolled
+                        ? 'text-black max-md:text-white'
+                        : 'text-white max-md:text-white';
+                    } else if (FeedPageMatch) {
+                      textColor = 'text-black max-md:text-white';
                     } else {
                       textColor = 'text-black';
                     }
 
-                    // Special case for mobile/tablet: override scrolled color to white
-                    const responsiveOverride = scrolled ? 'max-lg:text-white' : '';
-
-                    return `${baseClasses} ${activeClass} group-hover:text-white ${textColor} ${responsiveOverride}`;
+                    return `${baseClasses} ${activeClass} ${textColor} group-hover:text-white`;
                   }}
                 >
                   {item.name}

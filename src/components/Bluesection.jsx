@@ -18,18 +18,18 @@ const Bluesection = () => {
                     className='max-w-[765px] text-center mx-auto text-white mb-[78px] '
                 />
 
-                <div className='max-w-[920px] flex justify-between items-center mx-auto '>
+                <div className='max-w-[920px] grid sm:grid-cols-4 grid-cols-2 sm:gap-0 gap-5 mx-auto '>
                     {BLUESECTION_DATA.map((items, index) => (
                         <div key={index} className='flex flex-col items-center '>
                             <img src={items.icon} alt="icon" />
 
-                            <p className=' font-bold text-[35px] my-1 text-white '>
+                            <p className=' font-bold sm:text-[35px] text-[30px] my-1 text-white '>
                                 {items.value}
                             </p>
 
                             <NormalText
                                 NormalText={items.text}
-                                className='text-[18px] uppercase text-white '
+                                className='sm:text-[18px] text-base uppercase text-white '
                             />
                         </div>
                     ))}
