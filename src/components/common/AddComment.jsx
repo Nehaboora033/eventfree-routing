@@ -70,7 +70,7 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
                                 <div className='flex items-end'><img src={img3} alt="image" /></div>
                                 <div className='relative'>
                                     <img src={img4} alt="image" />
-                                    <More className='absolute sm:bottom-[10px] bottom-1 right-1 sm:right-[10px] bg-white' />
+                                    <More className='absolute min-[450px]:bottom-[10px] bottom-[6px] right-[6px] min-[450px]:right-[10px] bg-white' />
                                 </div>
                             </div>
                         </div>

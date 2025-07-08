@@ -9,9 +9,11 @@ import Breadcrumbs from './common/Breadcrumbs'
 const Usernameherosection = () => {
     return (
         <div className='max-w-[1320px] px-3 mx-auto pt-[167px]'>
-            <Breadcrumbs />
+            <div className='min-lg:hidden mb-5'>
+                <Breadcrumbs />
+            </div>
             <div className='flex flex-wrap -mx-3 justify-between'>
-                <div className='lg:w-[30%] w-full px-3 max-[1100px]:flex items-center justify-center'>         
+                <div className='lg:w-[30%] w-full px-3 max-[1100px]:flex items-center justify-center'>
                     <img src={image} alt="image" />
                 </div>
                 <div className='lg:w-[67%] w-full px-3'>
@@ -22,7 +24,7 @@ const Usernameherosection = () => {
                         <Heading className='font-semibold whitespace-nowrap max-[504px]:justify-center flex ' headingText={'Jhone Doe'} />
                         <div className='flex  gap-3 items-center max-[504px]:flex-col'>
                             <Button className='bg-[#EAEDFF] !text-black' buttonText={'Unshow Journey of Feed'} />
-                            <Button className='' buttonText={'Show Journey of Feed'} />
+                            <Button className='max-[504px]:min-w-[250px]' buttonText={'Show Journey of Feed'} />
                         </div>
                     </div>
 
