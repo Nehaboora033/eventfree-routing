@@ -47,24 +47,35 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
 
 
     return (
-        <div className={`p-[34px] rounded-[30px] mb-[45px] transition-shadow duration-300 ease-linear ${className} ${showComents ? 'shadow-card outline-0 ' : ''}`}>
+        <div className={` min-md:p-[34px] p-5 rounded-[30px] mb-[45px] transition-shadow duration-300 ease-linear ${className} ${showComents ? 'shadow-card outline-0 ' : ''}`}>
             {USERNAME_CARD.map((item, index) => (
-                <div key={index} className='flex  flex-wrap -mx-3'>
-                    <div className='w-1/2 px-3'>
+                <div key={index} className='flex  flex-wrap -mx-3 max-lg:flex-col-reverse lg:gap-0 gap-[50px]'>
+                    <div className='lg:w-1/2 w-full px-3'>
                         <div className='flex gap-[23px] items-center'>
-                            <img src={profile1} alt="profile" />
+                            <img src={profile1} alt="profile" className='sm:w-[56px] sm:h-[56px] w-[45px] h-[45px] block' />
                             <div>
-                                <p className='font-semibold text-2xl'>{item.name} </p>
-                                <p className='font-normal text-base text-[#666666]'>{item.postname} </p>
+                                <p className='font-semibold sm:text-2xl text-xl'>{item.name} </p>
+                                <p className='font-normal sm:text-base text-[14px] text-[#666666]'>{item.postname} </p>
                             </div>
                         </div>
-                        <h3 className='font-semibold text-2xl mt-[45px]'>{item.title} </h3>
-                        <div className='flex gap-2 mt-2'>
+                        <h3 className='font-semibold sm:text-2xl text-xl mt-[45px]'>{item.title} </h3>
+                        <div className='flex gap-2 mt-2 max-lg:mb-[20px] items-center'>
                             <img src={date} alt="date" />
-                            <p className='font-normal text-base text-[#666666]'>{currentDate} </p>
+                            <p className='font-normal sm:text-base text-[14px] text-[#666666] '>{currentDate} </p>
                         </div>
-                        <h3 className='font-normal text-base text-[#666666] max-w-[553px] mt-5'>{item.description1} </h3>
-                        <h3 className='font-normal text-base text-[#666666] mt-[13px] max-w-[553px]'>{item.description2} </h3>
+                        <div className='lg:w-1/2 w-full px-3 min-lg:hidden flex items-center justify-center'>
+                            <div className='grid grid-cols-2 sm:gap-x-[30px] sm:gap-y-[10px] gap-x-4 gap-y-1'>
+                                <img src={img1} alt="image" />
+                                <div className='flex items-start'><img src={img2} alt="image" /></div>
+                                <div className='flex items-end'><img src={img3} alt="image" /></div>
+                                <div className='relative'>
+                                    <img src={img4} alt="image" />
+                                    <More className='absolute sm:bottom-[10px] bottom-1 right-1 sm:right-[10px] bg-white' />
+                                </div>
+                            </div>
+                        </div>
+                        <h3 className='font-normal sm:text-base text-[14px] text-[#666666] lg:max-w-[553px] w-full mt-5'>{item.description1} </h3>
+                        <h3 className='font-normal sm:text-base text-[14px] text-[#666666] mt-[13px] lg:max-w-[553px] w-full'>{item.description2} </h3>
 
                         <div className='flex gap-[40px] mt-[26px]'>
                             <div className='flex gap-2 items-center' onClick={handleLikeClick}>
@@ -77,14 +88,14 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-1/2 px-3'>
-                        <div className='grid grid-cols-2 gap-x-[30px] gap-y-[10px]'>
+                    <div className='lg:w-1/2 w-full px-3 max-lg:hidden flex items-center justify-center'>
+                        <div className='grid grid-cols-2 sm:gap-x-[30px] sm:gap-y-[10px] gap-x-4 gap-y-1'>
                             <img src={img1} alt="image" />
                             <div className='flex items-start'><img src={img2} alt="image" /></div>
                             <div className='flex items-end'><img src={img3} alt="image" /></div>
                             <div className='relative'>
                                 <img src={img4} alt="image" />
-                                <More className='absolute bottom-[10px] right-[10px] bg-white ' />
+                                <More className='absolute bottom-[10px] right-[10px] bg-white' />
                             </div>
                         </div>
                     </div>
@@ -98,19 +109,17 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
 
                 <Input placeholderText={"Add a new comment"} profile={profile2} className='mb-[10px]' onPost={handlePostComment} />
                 {commentList.map((item, index) => (
-                    <div key={index} className='flex gap-5 mt-[24px]'>
-                        <img src={item.profile} alt="profile" className='w-[56px] h-[56px]' />
+                    <div key={index} className='flex sm:gap-5 gap-3 mt-[24px]'>
+                        <img src={item.profile} alt="profile" className='sm:w-[56px] sm:h-[56px] w-[45px] h-[45px] block' />
                         <div className='w-full'>
                             <div className='bg-[#F1F2F5] py-[14px] px-5 rounded-tr-[20px] rounded-bl-[20px] rounded-br-[20px]'>
                                 <h3 className='text-base font-medium'>{item.name}</h3>
                                 <p className='font-normal text-base text-[#606162]'>{item.comment}</p>
                             </div>
-                            <div
-                                className='flex gap-[5px] items-center mt-2 pl-5 cursor-pointer'
-                                onClick={() => handleDelete(index)}
-                            >
+                            <div className='flex gap-[5px] items-center mt-2 pl-5 cursor-pointer'
+                                onClick={() => handleDelete(index)} >
                                 <DELETE />
-                                <p className='font-normal text-base text-[#8C8C8C]'>Remove Comment</p>
+                                <p className='font-normal sm:text-base text-[14px] text-[#8C8C8C] whitespace-nowrap'>Remove Comment</p>
                             </div>
                         </div>
                     </div>
