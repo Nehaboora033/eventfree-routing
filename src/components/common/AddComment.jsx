@@ -9,10 +9,9 @@ import img1 from '../../assets/webp/username-img1.webp'
 import img2 from '../../assets/webp/username-img2.webp'
 import img3 from '../../assets/webp/username-img3.webp'
 import img4 from '../../assets/webp/username-img4.webp'
-import More from './../common/more'
 import Input from './../common/Input'
 import profile2 from '../../assets/png/profile2.png'
-import Morebox from './Morebox'
+import Morebox from './../common/Morebox'
 
 
 const AddComment = ({ className = '', defaultOpen = false }) => {
