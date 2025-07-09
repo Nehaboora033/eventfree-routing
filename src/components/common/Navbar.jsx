@@ -31,7 +31,7 @@ const Navbar = () => {
     <>
       <nav className={`fixed top-0 py-3 z-20 w-full transition duration-300 ease-in-out  ${scrolled ? 'shadow-card bg-white' : ''} ${FeedPage || UsernamePage ? 'bg-white shadow-card' : ''} `}>
         <div className={`max-w-[1320px] mx-auto px-3 flex items-center justify-between  ${HomePage || EventsPage ? 'bg-transparent' : ''}${FeedPage || UsernamePage ? 'bg-white' : ''}`}>
-          <Link to="/" className='flex gap-2.5 items-center'>
+          <Link target='blank' to="/" className='flex gap-2.5 items-center'>
             <img src={logoIcon} alt="logo-icon" className='max-sm:max-w-[90%] w-full' />
             <p className='max-[540px]:hidden font-bold text-[36px] text-[#2C49FE]'>Events<span className='text-[#01C8FF]'>Free</span></p>
           </Link>

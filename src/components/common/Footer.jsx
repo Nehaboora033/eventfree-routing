@@ -12,14 +12,14 @@ const Footer = () => {
                 <div className='max-w-[1320px] px-3 mx-auto'>
                     <div className='row -mx-3 pt-[86px] flex-wrap flex justify-between gap-[30px]'>
                         <div className='lg:w-[33.33%] w-full px-3'>
-                            <Link to={'/'}>
+                            <Link target='blank' to={'/'}>
                                 <img src={logo} alt="logo" />
                             </Link>
-                            <NormalText NormalText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c "} className={"text-white text-sm max-w-[346.80px] mt-9 mb-6"} />
+                            <NormalText NormalText={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. c "} className={"text-white text-sm max-w-[358px] mt-9 mb-6"} />
                             <div className='flex gap-[15.36px] '>
                                 {SOCIAL_ICONS.map((items, index) => (
 
-                                    <Link to={items.link} key={index} className='hover:-translate-y-2 transition-all
+                                    <Link target='blank' to={items.link} key={index} className='hover:-translate-y-2 transition-all
                                         duration-200 '>
                                         <items.icon />
                                     </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
                                     </li>
                                     {item.list.map((link, i) => (
                                         <li key={i}>
-                                            <Link
+                                            <Link target='blank'
                                                 to={`/${link}`}
                                                 className="text-white font-normal text-[12px] mb-3 relative inline-block group">
                                                 {link}

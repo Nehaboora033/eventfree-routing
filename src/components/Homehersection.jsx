@@ -26,8 +26,9 @@ const Homehersection = () => {
                         buttonText={'Get Started'}
                         className='py-[11px] px-7 text-base sm:text-[20px] leading-[150%] ' />
 
-                    <Link className='font-poppins font-normal text-base sm:text-[20px] whitespace-nowrap text-white '>
+                    <Link className='  font-poppins font-normal text-base sm:text-[20px] whitespace-nowrap text-white inline-block relative group '>
                         Learn more
+                        <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
                     </Link>
                 </div>
 
