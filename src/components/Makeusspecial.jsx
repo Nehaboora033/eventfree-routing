@@ -24,15 +24,15 @@ const Makeusspecial = () => {
                     <NormalText
                         NormalText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,'}
                         className='mb-[46px] ' />
-                    <div className="grid grid-cols-1 min-[500px]:grid-cols-1 min-[768px]:grid-cols-2  gap-y-[30px] min-[768px]:gap-x-6 xl:gap-x-8">
+
+                    <div className="grid max-[500px]:grid-cols-1 min-[500px]:grid-cols-2 gap-y-[45px] gap-x-6">
                         {SPECIAL_DATA.map((items, index) => (
                             <div
                                 key={index}
                                 className={`relative flex justify-center ${SPECIAL_DATA.length % 2 !== 0 && index === SPECIAL_DATA.length - 1
-                                    ? 'min-[768px]:col-span-2 mx-auto'
+                                    ? 'min-[500px]:col-span-2 mx-auto'
                                     : ''
-                                    }`}
-                            >
+                                    } max-sm:mb-5`} >
                                 {/* Icon */}
                                 <div className="size-[79px] w-[79px] border-[2px] border-[#2C49FE] bg-white z-10 rounded-full flex items-center justify-center absolute left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <img src={items.icon} alt="icon" />

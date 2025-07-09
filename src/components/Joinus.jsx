@@ -9,12 +9,12 @@ import FormInput from './common/FormInput'
 const Joinus = () => {
     return (
         <div className='max-w-[1320px] mx-auto mb-[90px] px-3'>
-            <div className="flex flex-wrap items-center -mx-3 md:gap-0 gap-4">
-                <div className="md:w-1/2 w-full lg:flex-row flex-col px-3 flex items-center justify-center">
-                    <img src={joinusimg} alt="image" draggable='false' className='md:w-[80%] max-md:hidden ' />
+            <div className="flex flex-wrap items-center -mx-3 min-[800px]:gap-0 gap-4">
+                <div className="min-[800px]:w-1/2 w-full lg:flex-row flex-col px-3 flex items-center justify-center">
+                    <img src={joinusimg} alt="image" draggable='false' className='min-[800px]:w-[80%] max-[800px]:hidden ' />
                 </div>
 
-                <div className="md:w-1/2 w-full md:flex-row flex-col px-3 ">
+                <div className="min-[800px]:w-1/2 w-full min-[800px]:flex-row flex-col px-3 ">
                     <img src={blueline} alt="image" draggable='false'  />
 
                     <Heading headingText={"Join Us !"}/>

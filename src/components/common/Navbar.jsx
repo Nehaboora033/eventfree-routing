@@ -57,10 +57,10 @@ const Navbar = () => {
 
                     if (MainPage) {
                       textColor = scrolled
-                        ? 'text-black max-md:text-white'
-                        : 'text-white max-md:text-white';
+                        ? 'text-black max-lg:text-white'
+                        : 'text-white max-lg:text-white';
                     } else if (FeedPageMatch) {
-                      textColor = 'text-black max-md:text-white';
+                      textColor = 'text-black max-lg:text-white';
                     } else {
                       textColor = 'text-black';
                     }

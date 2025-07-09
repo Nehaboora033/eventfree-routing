@@ -7,9 +7,9 @@ import { EXPLORE } from '../utils/helper'
 
 const Exploreevents = () => {
     return (
-        <div className='max-w-[1320px] mx-auto md:mb-[163px] mb-[125px] '>
+        <div className='max-w-[1320px] mx-auto lg:mb-[163px] mb-[90px] '>
             <div className="flex flex-wrap lg:gap-0 gap-5">
-                <div className="lg:w-[45%] w-full px-3 ">
+                <div className="lg:w-[45%] w-full  px-3 ">
                     <img src={line} alt="image" draggable='false' className='mb-[9px] ' />
 
                     <Heading headingText={'Explore our latest events'} className='lg:max-w-[338px] w-full leading-[137%] mb-3 ' />
@@ -21,7 +21,7 @@ const Exploreevents = () => {
                     </Link>
                 </div>
 
-                <div className="lg:w-[55%] w-full px-3 flex sm:gap-[31px] min-[450px]:flex-row flex-col">
+                <div className="lg:w-[55%] w-full px-3 flex lg:gap-[31px]  min-[450px]:flex-row flex-col">
                     {EXPLORE.map((item, index) => (
                         <div key={index} className='pt-[10px] pb-6 px-3 rounded-[5px] hover:scale-[1.025] hover:shadow-card transition-all duration-200 '>
                             <img src={item.image} alt="image" draggable='false' className='w-full mb-[13px] ' />
