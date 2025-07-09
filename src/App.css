@@ -8,10 +8,17 @@
 @theme {
 
   --shadow-card: 0px 8px 35px 0px #0000001A;
-  --font-yantra:"Yantramanav", sans-serif;
+  --font-yantra: "Yantramanav", sans-serif;
 
 }
 
 .text-stroke {
   -webkit-text-stroke: 0.3px;
+}
+
+@media (max-width: 550px) {
+  div.blue {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
 }

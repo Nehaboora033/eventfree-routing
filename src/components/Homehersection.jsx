@@ -32,25 +32,24 @@ const Homehersection = () => {
                     </Link>
                 </div>
 
-                <div className='flex py-[17px] px-[23px] justify-between min-[730px]:flex-row flex-col min-[740px]:gap-0 gap-5   items-center max-w-[962px] bg-[#2C49FEBD] min-[740px]:rounded-full rounded-[30px] '>
-                    
-                            {BLUEBOX.map((items, index) => (
-                                <React.Fragment key={index}>
-                                    <div className='flex gap-[21px] items-center '>
-                                        <items.icon />
-                                        <div>
-                                            <p className='!font-yantra font-medium text-[20px] text-white '>
-                                                {items.title}
-                                            </p>
-                                            <p className='!font-yantra font-normal text-[14px] text-[#FFFFFFB2] '>
-                                                {items.data}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="border-[2px] h-[74px] border-white max-[730px]:hidden "></div>
-                                </React.Fragment>
-                            ))}
-                    <Button className='!sm:py-5 !py-3 !px-10 bg-white !text-[#2C49FE] uppercase !font-bold text-[20px] ' buttonText={'go check'} />
+                <div className="grid grid-cols-1 min-[550px]:grid-cols-3 min-[730px]:flex flex-col min-[730px]:flex-row py-[17px] px-[23px] justify-between min-[740px]:gap-0 gap-5 items-center max-w-[962px] bg-[#2C49FEBD] min-[730px]:rounded-full rounded-[30px]">
+                    {BLUEBOX.map((items, index) => (
+                        <React.Fragment key={index}>
+                            <div className='flex gap-[21px] items-center '>
+                                <items.icon />
+                                <div>
+                                    <p className='!font-yantra font-medium text-[20px] text-white '>
+                                        {items.title}
+                                    </p>
+                                    <p className='!font-yantra font-normal text-[14px] text-[#FFFFFFB2] '>
+                                        {items.data}
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="border-[2px] h-[74px] border-white max-[730px]:hidden "></div>
+                        </React.Fragment>
+                    ))}
+                    <Button className='col-span-3 max-w-[190px] max-[730px]:mx-auto !sm:py-5 !py-3 !px-10 bg-white !text-[#2C49FE] uppercase !font-bold text-[20px] ' buttonText={'go check'} />
                 </div>
             </div>
         </div>

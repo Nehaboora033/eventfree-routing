@@ -23,24 +23,30 @@ const Makeusspecial = () => {
 
                     <NormalText
                         NormalText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,'}
-                        className='mb-[46px] '
-                    />
-
-                    <div className='grid min-[1220px]:grid-cols-2 max-[430px]:grid-cols-1   gap-y-[37px] max-[1220px]:gap-x-8'>
+                        className='mb-[46px] ' />
+                    <div className="grid grid-cols-1 min-[500px]:grid-cols-1 min-[768px]:grid-cols-2  gap-y-[30px] min-[768px]:gap-x-6 xl:gap-x-8">
                         {SPECIAL_DATA.map((items, index) => (
-                            <div key={index} className={`relative flex justify-center ${SPECIAL_DATA.length % 2 !== 0 && index === SPECIAL_DATA.length - 1 ? 'col-span-2 mx-auto' : ''}`}>
-                                <div className='size-[79px] max-w-[79px] w-full border-[2px] border-[#2C49FE] bg-white z-1 rounded-full flex items-center justify-center  absolute left-1/2 -translate-x-1/2 -translate-y-1/2 '>
+                            <div
+                                key={index}
+                                className={`relative flex justify-center ${SPECIAL_DATA.length % 2 !== 0 && index === SPECIAL_DATA.length - 1
+                                    ? 'min-[768px]:col-span-2 mx-auto'
+                                    : ''
+                                    }`}
+                            >
+                                {/* Icon */}
+                                <div className="size-[79px] w-[79px] border-[2px] border-[#2C49FE] bg-white z-10 rounded-full flex items-center justify-center absolute left-1/2 -translate-x-1/2 -translate-y-1/2">
                                     <img src={items.icon} alt="icon" />
                                 </div>
 
-                                <div className='px-5 pt-[45px] pb-[17px] border border-[#2C49FE] rounded-[5px] max-w-[260px] group hover:bg-[#2C49FE] transition-colors duration-200 '>
-                                    <p className='font-poppins font-medium text-[25px] text-[#2C49FE] capitalize text-center group-hover:text-white transition-colors duration-200 '>
+                                {/* Card */}
+                                <div className="px-5 pt-[45px] pb-[17px] border border-[#2C49FE] rounded-[5px] w-full max-w-[260px] group hover:bg-[#2C49FE] transition-colors duration-200 text-center">
+                                    <p className="font-poppins font-medium text-[20px] sm:text-[22px] lg:text-[25px] text-[#2C49FE] capitalize group-hover:text-white transition-colors duration-200">
                                         {items.title}
                                     </p>
 
                                     <NormalText
-                                        NormalText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in '}
-                                        className='text-center !text-[#2C49FE] group-hover:!text-white transition-colors duration-200 '
+                                        NormalText="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in"
+                                        className="!text-[#2C49FE] group-hover:!text-white transition-colors duration-200"
                                     />
                                 </div>
                             </div>
