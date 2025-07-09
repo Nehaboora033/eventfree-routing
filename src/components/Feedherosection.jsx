@@ -3,8 +3,8 @@ import jhoneDoe from '../assets/webp/feedherosection-img.webp'
 import Heading from './common/Heading'
 import NormalText from './common/NormalText'
 import { FOLLOWING_EVENTS_CARD_IMG } from '../utils/helper'
-import More from './common/more'
 import Breadcrumbs from './common/Breadcrumbs'
+import More from './common/More'
 
 
 
