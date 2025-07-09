@@ -7,7 +7,6 @@ import AddComment from './common/AddComment'
 
 const NewPost = () => {
     return (
-        <>
             <div className='max-w-[1320px] px-3 mx-auto pb-[59px]'>
                 <img src={line} alt="line" className='mt-[76px]' />
                 <Heading headingText={"New Posts"} className='font-semibold mb-[30px]' />
@@ -16,8 +15,6 @@ const NewPost = () => {
                     <AddComment key={index} className='outline outline-[#CCCCCC]' defaultOpen={false} />
                 ))}
             </div>
-        </>
-
     )
 }
 

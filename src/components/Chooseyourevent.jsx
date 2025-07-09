@@ -7,8 +7,6 @@ import Button from './common/Button'
 
 const Chooseyourevent = () => {
   return (
-    <>
-
       <div className='max-w-[1320px] mx-auto px-3 pt-[68px] pb-[155px]'>
         <img src={line} alt="line" className='block mx-auto' />
         <Heading headingText={"Choose your next event"} className='text-center mb-[33px]' />
@@ -29,7 +27,6 @@ const Chooseyourevent = () => {
           ))}
         </div>
       </div>
-    </>
   )
 }
 

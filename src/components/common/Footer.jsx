@@ -7,7 +7,6 @@ import logo from '../../assets/svg/footer-logo.svg'
 
 const Footer = () => {
     return (
-        <>
             <div className='bg-black'>
                 <div className='max-w-[1320px] px-3 mx-auto'>
                     <div className='row -mx-3 pt-[86px] flex-wrap flex justify-between gap-[30px]'>
@@ -69,8 +68,7 @@ const Footer = () => {
                         <NormalText className={'text-white text-center'} NormalText={" © Credits of companyName belong to companyName."} />
                     </div>
                 </div>
-            </div>
-        </>
+            </div>  
     )
 }
 

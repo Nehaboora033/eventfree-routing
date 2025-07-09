@@ -4,7 +4,6 @@ import NormalText from './common/NormalText'
 
 const Videosection = () => {
     return (
-
         <div className='max-w-[1320px] px-3 mx-auto min-[500px]:mt-[134px] mt-[70px]'>
             <div className='flex flex-wrap -mx-3 md:flex-row flex-col gap-6 md:gap-0'>
                 <div className='md:w-1/2 w-full px-3'>
@@ -13,11 +12,8 @@ const Videosection = () => {
                 </div>
                 <div className='md:w-1/2  w-full px-3 flex items-center justify-center md:justify-end'>
                     <iframe width="619" className='rounded-[30px] min-[500px]:h-[415px] h-[300px]' src="https://www.youtube.com/embed/asMHYCnMb-Q?si=VYC1VHuh_IJv3KG7" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen ></iframe>
-
                 </div>
-
             </div>
-
         </div>
     )
 }

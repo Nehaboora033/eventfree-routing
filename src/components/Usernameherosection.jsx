@@ -27,7 +27,6 @@ const Usernameherosection = () => {
                             <Button className='max-[504px]:min-w-[250px]' buttonText={'Show Journey of Feed'} />
                         </div>
                     </div>
-
                     <NormalText className={'max-w-[857px] mt-5 mb-[38px]'} NormalText={'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.'} />
                     <div className='grid min-[700px]:grid-cols-5 min-[400px]:grid-cols-3 grid-cols-2 min-[700px]:gap-0 gap-4 '>
                         {USERNAME_HERO_DATA.map((item, index) => (
@@ -39,11 +38,8 @@ const Usernameherosection = () => {
                             </div>
                         ))}
                     </div>
-
-
                 </div>
             </div>
-
         </div>
     )
 }

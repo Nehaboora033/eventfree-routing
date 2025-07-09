@@ -28,7 +28,6 @@ const Navbar = () => {
   const Blue = FeedPage || UsernamePage || scrolled;
 
   return (
-    <>
       <nav className={`fixed top-0 py-3 z-20 w-full transition duration-300 ease-in-out  ${scrolled ? 'shadow-card bg-white' : ''} ${FeedPage || UsernamePage ? 'bg-white shadow-card' : ''} `}>
         <div className={`max-w-[1320px] mx-auto px-3 flex items-center justify-between  ${HomePage || EventsPage ? 'bg-transparent' : ''}${FeedPage || UsernamePage ? 'bg-white' : ''}`}>
           <Link target='blank' to="/" className='flex gap-2.5 items-center'>
@@ -86,8 +85,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
-
   )
 }
 

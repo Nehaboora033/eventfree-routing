@@ -27,7 +27,6 @@ const Breadcrumbs = () => {
                 );
 
                 const name = BreadCrumbs[matchKey] || pathnames[index];
-
                 return (
                     <span key={path}>
                         <span className={'text-[#666666]'}>{' >  '}</span>

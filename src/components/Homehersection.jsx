@@ -16,7 +16,6 @@ const Homehersection = () => {
                     </span>
                     scelerisque etiam eu.
                 </h1>
-
                 <NormalText
                     className='max-w-[765px] font-yantra sm:text-[20px] !text-lg  text-white mb-[33px] '
                     NormalText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu. Nunc elit elit, malesuada id suscipit cursus,'} />
@@ -31,7 +30,6 @@ const Homehersection = () => {
                         <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
                     </Link>
                 </div>
-
                 <div className="flex flex-col min-[550px]:grid min-[550px]:grid-cols-3 min-[730px]:flex min-[730px]:flex-row py-[17px] px-[23px] justify-between min-[740px]:gap-0 gap-5 items-center max-w-[962px] bg-[#2C49FEBD] min-[730px]:rounded-full rounded-[30px]">
                     {BLUEBOX.map((items, index) => (
                         <React.Fragment key={index}>

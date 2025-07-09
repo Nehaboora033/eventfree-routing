@@ -71,7 +71,6 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
                                 <div className='flex items-end'><img src={img3} alt="image" /></div>
                                 <div className='relative'>
                                     <img src={img4} alt="image" />
-                                    {/* <More className='absolute min-[450px]:bottom-[10px] bottom-[6px] right-[6px] min-[450px]:right-[10px] bg-white' /> */}
                                     <Morebox className='absolute min-[450px]:bottom-[10px] bottom-[6px] right-[6px] min-[450px]:right-[10px] bg-white' />
                                 </div>
                             </div>
@@ -97,7 +96,6 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
                             <div className='flex items-end'><img src={img3} alt="image" /></div>
                             <div className='relative'>
                                 <img src={img4} alt="image" />
-                                {/* <More className='absolute bottom-[10px] right-[10px] bg-white' /> */}
                                 <Morebox className='absolute bottom-[10px] right-[10px] bg-white' />
                             </div>
                         </div>
@@ -128,7 +126,6 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
                     </div>
                 ))}
             </>)}
-
         </div>
     )
 }

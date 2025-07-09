@@ -31,7 +31,6 @@ const Tellus = () => {
             <Heading className='font-semibold text-center mb-4' headingText={'Tell Us!'} />
             <NormalText className={'max-w-[719px] mb-[47px] text-center mx-auto'} NormalText={'Dictumst vulputate eget quisque iaculis hendrerit quis ut fringilla. Senectus gravida sed interdum pretium at quam morbi. Nunc, libero nam cursus sem faucibus urna. Hendrerit vulputate in duis donec sit. Ut vitae dolor fringilla urna eget aliquet.'} />
             <Input placeholderText={"Add a new comment"} profile={profile9} className='mb-[10px]' onPost={handlePostComment} />
-
             {commentList.map((item, index) => (
                 <div key={index} className='flex sm:gap-5 gap-3 mt-[24px] '>
                     <img src={item.profile} alt="profile" className='sm:w-[56px] sm:h-[56px] w-[45px] h-[45px]' />
@@ -46,9 +45,7 @@ const Tellus = () => {
                         </div>
                     </div>
                 </div>
-            ))
-
-            }
+            )) }
         </div>
     )
 }
