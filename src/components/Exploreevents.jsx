@@ -16,8 +16,9 @@ const Exploreevents = () => {
 
                     <NormalText NormalText={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur urna in dictum suscipit. Suspendisse maximus ipsum sem. Donec ut justo et leo congue lacinia vitae nec arcu.'} className='lg:max-w-[543px] w-full mb-[15px]' />
 
-                    <Link className='uppercase font-bold text-base '>
+                    <Link className='uppercase font-bold text-base inline-block relative group '>
                         learn more
+                        <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-black scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
                     </Link>
                 </div>
 
