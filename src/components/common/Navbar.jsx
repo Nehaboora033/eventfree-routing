@@ -63,7 +63,6 @@ const Navbar = () => {
                   } else {
                     textColor = 'text-black';
                   }
-
                   return `${baseClasses} ${activeClass} ${textColor} group-hover:text-white`;
                 }}
               >

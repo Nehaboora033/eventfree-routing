@@ -304,23 +304,23 @@ export const USERNAME_HERO_DATA = [
 export const GALLERY_IMG = [
     {
         image: galleryimg1,
-        colSpan: 'col-span-1',
-        rowSpan: 'row-span-1',
+        colSpan: 'col-span-1 ',
+        rowSpan: 'row-span-1 ',
     },
     {
         image: galleryimg2,
-        colSpan: 'col-span-1',
-        rowSpan: 'row-span-1',
+        colSpan: 'col-span-1 ',
+        rowSpan: 'row-span-1 ',
     },
     {
         image: galleryimg3,
-        colSpan: 'col-span-1',
-        rowSpan: 'row-span-2',
+        colSpan: 'col-span-1 ',
+        rowSpan: 'row-span-2 ',
     },
     {
         image: galleryimg4,
-        colSpan: 'col-span-2',
-        rowSpan: 'row-span-1',
+        colSpan: 'col-span-2 ',
+        rowSpan: 'row-span-1 ',
     },
     {
         image: galleryimg5,
@@ -329,8 +329,8 @@ export const GALLERY_IMG = [
     },
     {
         image: galleryimg6,
-        colSpan: 'col-span-2',
-        rowSpan: 'row-span-1',
+        colSpan: 'col-span-2 ',
+        rowSpan: 'row-span-1 ',
     },
 
 ]

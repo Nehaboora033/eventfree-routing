@@ -39,9 +39,11 @@ const Tellus = () => {
                             <h3 className='text-base font-medium'>{item.name} </h3>
                             <p className='font-normal sm:text-base text-[14px] text-[#606162]'>{item.comment} </p>
                         </div>
-                        <div className='flex gap-[5px] items-center mt-2 pl-5' onClick={() => handleDelete(index)} >
-                            <DELETE />
-                            <p className='font-normal sm:text-base text-[14px]  text-[#8C8C8C]'>Remove Comment</p>
+                        <div className='inline-block'>
+                            <div className='flex cursor-pointer  items-center mt-2 pl-5 ' onClick={() => handleDelete(index)} >
+                                <DELETE  />
+                                <p className='font-normal sm:text-base text-[14px] p-2  text-[#8C8C8C]'>Remove Comment</p>
+                            </div>
                         </div>
                     </div>
                 </div>

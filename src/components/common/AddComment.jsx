@@ -79,11 +79,11 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
                         <h3 className='font-normal sm:text-base text-[14px] text-[#666666] mt-[13px] lg:max-w-[553px] w-full'>{item.description2} </h3>
 
                         <div className='flex gap-[40px] mt-[26px]'>
-                            <div className='flex gap-2 items-center' onClick={handleLikeClick}>
+                            <div className='flex gap-2 items-center cursor-pointer' onClick={handleLikeClick}>
                                 <LIKE liked={liked} />
                                 <p className='font-normal text-base text-[#666666]'>{likeCount}</p>
                             </div>
-                            <div className='flex  gap-2 items-center' onClick={() => setShowComents(!showComents)}>
+                            <div className='flex  gap-2 items-center cursor-pointer' onClick={() => setShowComents(!showComents)}>
                                 <COMMENT />
                                 <p className='font-normal text-base text-[#666666]'>{commentList.length} </p>
                             </div>
@@ -117,10 +117,12 @@ const AddComment = ({ className = '', defaultOpen = false }) => {
                                 <h3 className='text-base font-medium'>{item.name}</h3>
                                 <p className='font-normal text-base text-[#606162]'>{item.comment}</p>
                             </div>
-                            <div className='flex gap-[5px] items-center mt-2 pl-5 cursor-pointer'
-                                onClick={() => handleDelete(index)} >
-                                <DELETE />
-                                <p className='font-normal sm:text-base text-[14px] text-[#8C8C8C] whitespace-nowrap'>Remove Comment</p>
+                            <div className='inline-block'>
+                                <div className='flex  items-center mt-2 pl-5 cursor-pointer'
+                                    onClick={() => handleDelete(index)} >
+                                    <DELETE />
+                                    <p className='font-normal sm:text-base p-2 text-[14px] text-[#8C8C8C] whitespace-nowrap'>Remove Comment</p>
+                                </div>
                             </div>
                         </div>
                     </div>

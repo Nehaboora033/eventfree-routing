@@ -12,7 +12,7 @@ const Usernameherosection = () => {
             <div className='min-lg:hidden mb-5'>
                 <Breadcrumbs />
             </div>
-            <div className='flex flex-wrap -mx-3 justify-between'>
+            <div className='flex flex-wrap -mx-3 justify-between lg:gap-0 gap-3'>
                 <div className='lg:w-[30%] w-full px-3 max-[1100px]:flex items-center justify-center'>
                     <img src={image} alt="image" />
                 </div>
@@ -21,7 +21,7 @@ const Usernameherosection = () => {
                         <Breadcrumbs />
                     </div>
                     <div className='flex justify-between min-[1150px]:flex-row max-[1024px]:flex-row flex-col  max-md:flex-col min-[1150px]:gap-0 gap-2'>
-                        <Heading className='font-semibold whitespace-nowrap max-[504px]:justify-center flex ' headingText={'Jhone Doe'} />
+                        <Heading className='font-semibold whitespace-nowrap max-[504px]:justify-center flex' headingText={'Jhone Doe'} />
                         <div className='flex  gap-3 items-center max-[504px]:flex-col'>
                             <Button className='bg-[#EAEDFF] !text-black' buttonText={'Unshow Journey of Feed'} />
                             <Button className='max-[504px]:min-w-[250px]' buttonText={'Show Journey of Feed'} />
