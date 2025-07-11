@@ -34,7 +34,6 @@ const Footer = () => {
                                 {item.list.map((link, i) => (
                                     <li key={i}>
                                         <Link target='blank'
-                                            to={`/${link}`}
                                             className="text-white font-normal text-[12px] mb-3 relative inline-block group">
                                             {link}
                                             <span className="absolute left-0 -bottom-1 h-[1px] w-full bg-white scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
